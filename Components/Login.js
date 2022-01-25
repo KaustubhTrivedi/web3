@@ -1,10 +1,10 @@
 import Image from "next/image";
 import { useMoralis } from "react-moralis";
 import EthLogo from "../Assets/EthLogo.png";
-// import { Button } from "@mui/material";
+import { Button } from "@mui/material";
 const Login = () => {
-  const {authenticate} = useMoralis();
-  
+  const { authenticate } = useMoralis();
+
   return (
     <>
       <div className="bg-black relative text-white h-screen">
@@ -29,7 +29,6 @@ const Login = () => {
           />
         </div>
       </div>
-      ;
     </>
   );
 };
