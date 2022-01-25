@@ -20,14 +20,14 @@ const Login = () => {
             Login to Web3
           </button>
         </div>
-        <div className=" flex items-center">
+        {/* <div className=" flex items-center">
           <Image
             src="https://links.papareact.com/55n"
             alt="Background"
             layout="fill"
             objectFit="cover"
           />
-        </div>
+        </div> */}
       </div>
     </>
   );
