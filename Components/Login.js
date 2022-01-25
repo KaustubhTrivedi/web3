@@ -11,6 +11,7 @@ const Login = () => {
         <div className="flex flex-col z-50 absolute h-4/6 w-full items-center justify-center space-y-8">
           <Image
             className="drop-shadow rounded-lg"
+            alt="Ethereum Logo"
             src={EthLogo}
             height={150}
             width={100}
@@ -22,6 +23,7 @@ const Login = () => {
         <div className=" flex items-center">
           <Image
             src="https://links.papareact.com/55n"
+            alt="Background"
             layout="fill"
             objectFit="cover"
           />

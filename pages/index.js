@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Login from "../components/Login";
+import Login from "../Components/Login";
 import { useMoralis } from "react-moralis";
 // import EthLogo from '../Assets/EthLogo.ico'
 export default function Home() {
