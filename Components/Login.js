@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { Fragment } from "react";
 import Image from "next/image";
 import { useMoralis } from "react-moralis";
 import EthLogo from "../Assets/EthLogo.png";
@@ -6,13 +7,13 @@ const Login = () => {
   const { authenticate } = useMoralis();
 
   return (
-    <>
+    <Fragment>
       <div className="bg-black relative text-white h-screen">
         <Head>
           <title>Web3 Challenge Login</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <div className="flex flex-col z-50 absolute h-4/6 w-full items-center justify-center space-y-8">
+        <div className="flex flex-col absolute h-4/6 w-full items-center justify-center space-y-8">
           <Image
             className="drop-shadow rounded-lg z-auto"
             alt="Ethereum Logo"
@@ -27,16 +28,16 @@ const Login = () => {
             Login to Web3
           </button>
         </div>
-        <div className=" flex items-center">
+        {/* <div className=" flex items-center">
           <Image
             src="https://links.papareact.com/55n"
             alt="Background"
             layout="fill"
             objectFit="cover"
           />
-        </div>
+        </div> */}
       </div>
-    </>
+    </Fragment>
   );
 };
 
