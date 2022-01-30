@@ -1,22 +1,24 @@
 import Head from "next/head";
 import Login from "../Components/Login";
+import Header from "../Components/Header";
 import { useMoralis } from "react-moralis";
 // import EthLogo from '../Assets/EthLogo.ico'
 export default function Home() {
-  const { isAuthenticated, logout } = useMoralis();
+  const { isAuthenticated } = useMoralis();
 
   if (!isAuthenticated) return <Login />;
   return (
-    <div className="flex space-y-5 h-screen w-screen items-center justify-center">
+    <div className="h-screen overflow-y-scroll mx-auto bg-gradient-to-b from-black to-fuchsia-500 overflow-hidden">
       <Head>
-        <title>Web3 Challenge</title>
+        <title>Web3 Challenge Chat Page</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div  style={{ fontFamily: "monospace", fontSize: "80px" }}>
-        <h1 className="font-black">Welcome to the Web3 Chat!!!</h1>
-      </div>
-      <div>
-        <button onClick={logout}>Logout of Web3</button>
+
+      <div className="max-w-screen-2xl mx-auto">
+        {/* header */}
+        <Header />
+
+        {/* messages */}
       </div>
     </div>
   );

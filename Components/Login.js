@@ -1,13 +1,17 @@
+import Head from "next/head";
 import Image from "next/image";
 import { useMoralis } from "react-moralis";
 import EthLogo from "../Assets/EthLogo.png";
-import { Button } from "@mui/material";
 const Login = () => {
   const { authenticate } = useMoralis();
 
   return (
     <>
       <div className="bg-black relative text-white h-screen">
+        <Head>
+          <title>Web3 Challenge Login</title>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
         <div className="flex flex-col z-50 absolute h-4/6 w-full items-center justify-center space-y-8">
           <Image
             className="drop-shadow rounded-lg z-auto"
@@ -16,7 +20,10 @@ const Login = () => {
             height={150}
             width={100}
           />
-          <button onClick={authenticate} className="text-black bg-yellow-500 rounded-lg p-5 animate-pulse">
+          <button
+            onClick={authenticate}
+            className="text-black bg-yellow-500 rounded-lg p-5 animate-pulse"
+          >
             Login to Web3
           </button>
         </div>
