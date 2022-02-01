@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import Image from "next/image";
 import { useMoralis } from "react-moralis";
-const Avatar = (username, logoutOnPress) => {
+const Avatar = (logoutOnPress) => {
   const { user, logout } = useMoralis();
 
   return (
@@ -9,9 +9,7 @@ const Avatar = (username, logoutOnPress) => {
       <div>
         <Image
           className="rounded-full bg-black cursor-pointer hover:opacity-75"
-          src={`https://avatars.dicebear.com/api/pixel-art/${
-            username || user.getUsername()
-          }.svg`}
+          src={`https://avatars.dicebear.com/api/pixel-art/${user.getUsername()}.svg`}
           layout="fill"
           onClick={() => logoutOnPress && logout()}
         />

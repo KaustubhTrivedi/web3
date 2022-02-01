@@ -10,7 +10,7 @@ const Header = () => {
     <Fragment>
       <div className="text-left lg:text-center z-50 bg-black sticky top-0 shadow-sm border-b-2 border-pink-700">
         <div className="p-5 space-y-3 top-3">
-          <div className=" relative animate-pulse  h-24 w-24 mx-auto hidden lg:inline-grid">
+          <div className=" relative  h-24 w-24 mx-auto hidden lg:inline-grid">
             <Image src={EthLogo} layout="fill" />
           </div>
           <div className="relative h-48 w-48 lg:mx-auto border-pink-500 border-8 rounded-full">

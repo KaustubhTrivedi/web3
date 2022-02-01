@@ -8,12 +8,12 @@ const Login = () => {
 
   return (
     <Fragment>
-      <div className="bg-black relative text-white h-screen">
+      <div className="bg-[url('https://links.papareact.com/55n')] relative text-white h-screen">
         <Head>
           <title>Web3 Challenge Login</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <div className="flex flex-col absolute h-4/6 w-full items-center justify-center space-y-8">
+        <div className="flex flex-col absolute h-4/6 w-full items-center justify-center space-y-8 z-50">
           <Image
             className="drop-shadow rounded-lg z-auto"
             alt="Ethereum Logo"
@@ -28,14 +28,6 @@ const Login = () => {
             Login to Web3
           </button>
         </div>
-        {/* <div className=" flex items-center">
-          <Image
-            src="https://links.papareact.com/55n"
-            alt="Background"
-            layout="fill"
-            objectFit="cover"
-          />
-        </div> */}
       </div>
     </Fragment>
   );
