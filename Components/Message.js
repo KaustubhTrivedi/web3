@@ -23,6 +23,7 @@ const Message = ({ message }) => {
               : "rounded-bl-lg text-black bg-blue-400"
           }`}
         >
+          {/* Test */}
           <p>{message.get("message")}</p>
         </div>
       </div>
