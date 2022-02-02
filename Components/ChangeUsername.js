@@ -1,4 +1,3 @@
-import { Button } from "@mui/material";
 import React, { Fragment, useState, useRef } from "react";
 import { useMoralis } from "react-moralis";
 
@@ -12,9 +11,9 @@ const ChangeUsername = () => {
   return (
     <Fragment>
       <div>
-        <Button disabled={isUserUpdating} onClick={setUsername}>
+        <button disabled={isUserUpdating} onClick={setUsername}>
           Change Username
-        </Button>
+        </button>
       </div>
     </Fragment>
   );
