@@ -25,7 +25,7 @@ const Messages = () => {
               <Message key={message.id} message={message} />
             ))}
           </div>
-          <div>
+          <div className="text-center">
             <SendMessage endOfMessagesRef={endOfMessagesRef} />
           </div>
           <div ref={endOfMessagesRef} className="text-center text-gray-400">

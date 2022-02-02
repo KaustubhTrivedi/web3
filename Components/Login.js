@@ -15,7 +15,7 @@ const Login = () => {
         </Head>
         <div className="flex flex-col absolute h-4/6 w-full items-center justify-center space-y-8 z-50">
           <Image
-            className="drop-shadow rounded-lg z-auto"
+            className="drop-shadow rounded-lg z-auto animate-pulse"
             alt="Ethereum Logo"
             src={EthLogo}
             height={150}

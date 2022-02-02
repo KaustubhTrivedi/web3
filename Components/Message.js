@@ -11,7 +11,7 @@ const Message = ({ message }) => {
           isOwnMessage && "justify-end"
         }`}
       >
-        <div className={`relative h-8 w-8${isOwnMessage && "order-last"}`}>
+        <div className={`relative h-8 w-8 ${isOwnMessage && "order-last ml-2"}`}>
           <Avatar username={message.get("username")} />
         </div>
         <div

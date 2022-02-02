@@ -31,7 +31,7 @@ const SendMessage = ({ endOfMessagesRef }) => {
   };
   return (
     <Fragment>
-      <form className="flex fixed bottom-10 bg-black opacity-80 w-11/12 max-w-2xl rounded-full px-5 mx-3 shadow-xl border-4 border-blue-400 lg:mx-96">
+      <form className="flex absolute bottom-10 bg-black opacity-80 w-11/12 max-w-2xl rounded-full px-5 mx-3 shadow-xl border-4 border-blue-400 lg:mx-96">
         <input
           className="flex-grow  outline-none bg-transparent text-white placeholder-gray-500 pr-5"
           placeholder={`Enter a message ${user.getUsername()}`}
