@@ -4,11 +4,7 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {
-      backgroundImage: {
-        "background-image": 'url("https://links.papareact.com/55n")',
-      },
-    },
+    extend: {},
   },
   plugins: [],
 };
