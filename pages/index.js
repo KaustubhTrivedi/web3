@@ -10,7 +10,7 @@ export default function Home() {
   
   if (!isAuthenticated) return <Login />;
   return (
-    <div className="h-screen overflow-y-scroll mx-auto bg-gradient-to-b from-black to-fuchsia-500 overflow-hidden">
+    <div className="h-screen overflow-y-scroll mx-auto bg-gradient-to-b from-black to-purple-500 overflow-hidden">
       <Head>
         <title>Web3 Challenge Chat Page</title>
         <link rel="icon" href="/favicon.ico" />
